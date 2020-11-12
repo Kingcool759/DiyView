@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".show.Show0"
     tools:ignore="MissingConstraints">
+
     <com.example.diyview.view.MyCircle
+        android:layout_margin="5dp"
         android:layout_width="100dp"
+        android:padding="10dp"
+        app:background_color="@color/gray"
+        app:circle_color="@color/orange"
         android:layout_height="100dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
