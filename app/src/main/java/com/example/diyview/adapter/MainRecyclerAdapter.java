@@ -1,4 +1,4 @@
-package com.example.diyview;
+package com.example.diyview.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.hjq.toast.ToastUtils;
-
-import org.w3c.dom.Text;
+import com.example.diyview.R;
 
 /**
  * @data on 2020/11/11 4:43 PM

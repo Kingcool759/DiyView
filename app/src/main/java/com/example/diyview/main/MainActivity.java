@@ -1,4 +1,4 @@
-package com.example.diyview;
+package com.example.diyview.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import java.util.ArrayList;
+import com.example.diyview.adapter.MainRecyclerAdapter;
+import com.example.diyview.R;
 
 public class MainActivity extends AppCompatActivity {
     private LinearLayoutManager layoutManager;

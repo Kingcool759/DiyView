@@ -1,7 +1,8 @@
-package com.example.diyview;
+package com.example.diyview.application;
 
 import android.app.Application;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.example.diyview.BuildConfig;
 import com.hjq.toast.ToastUtils;
 
 /**

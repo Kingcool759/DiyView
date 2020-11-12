@@ -3,7 +3,7 @@
     package="com.example.diyview">
 
     <application
-        android:name=".DIYViewApplication"
+        android:name=".application.DIYViewApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +14,7 @@
         <activity android:name=".show.Show2" />
         <activity android:name=".show.Show1" />
         <activity android:name=".show.Show0" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
