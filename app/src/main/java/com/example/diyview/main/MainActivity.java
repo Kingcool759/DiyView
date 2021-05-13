@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             "01自定义View系列：饼状图+数据",  //0
             "02自定义View系列：圆环",  //0
             "03自定义View系列：奥运五环",  //0
-            "04自定义View：圆",  //0
+            "04自定义View系列：流式布局",  //0
             "05自定义View：圆",  //0
             "06自定义View：圆",  //0
             "07自定义View：圆",  //0

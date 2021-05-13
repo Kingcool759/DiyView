@@ -1,4 +1,4 @@
-package com.example.diyview.view;
+package com.example.diyview.view.circle;
 
 import android.content.Context;
 import android.content.res.TypedArray;

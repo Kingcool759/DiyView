@@ -8,7 +8,7 @@
     tools:ignore="MissingConstraints">
 
     <!--自定义系列1：自定义实心圆+自定义属性-->
-    <com.example.diyview.view.SolidCircleView
+    <com.example.diyview.view.circle.SolidCircleView
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:padding="10dp"

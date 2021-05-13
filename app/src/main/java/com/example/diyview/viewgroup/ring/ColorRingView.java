@@ -1,4 +1,4 @@
-package com.example.diyview.viewgroup;
+package com.example.diyview.viewgroup.ring;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,8 +18,6 @@ import com.example.diyview.R;
 public class ColorRingView extends View {
 
     private Paint mPaint;
-    private int cirlceColor;//圆环颜色
-    private int stokeWidth;//圆环宽度
 
     public ColorRingView(Context context) {
         this(context, null);
@@ -37,8 +35,11 @@ public class ColorRingView extends View {
     private void init(Context context, AttributeSet attrs) {
         //获取自定义属性
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.ColorRing);
-        cirlceColor = ta.getColor(R.styleable.ColorRing_ring_color, Color.RED);
-        stokeWidth = ta.getInt(R.styleable.ColorRing_ring_width, 10);
+        //圆环颜色
+        int cirlceColor = ta.getColor(R.styleable.ColorRing_ring_color, Color.RED);
+        //圆环宽度
+        int stokeWidth = ta.getInt(R.styleable.ColorRing_ring_width, 10);
+        //回收
         ta.recycle();
         //初始化画笔
         mPaint = new Paint();

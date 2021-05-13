@@ -39,7 +39,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 String path = String.format("/show/diyView"+position);
-                ToastUtils.show("item" + path);
+//                ToastUtils.show("item" + path);
                 ARouter.getInstance().build(path).navigation();
             }
         });

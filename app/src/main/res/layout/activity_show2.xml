@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".show.Show2">
 
-    <com.example.diyview.viewgroup.ColorRingView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <com.example.diyview.viewgroup.ring.ColorRingView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         app:ring_color="@color/orange"
-        app:ring_width="50" />
+        app:ring_width="50"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

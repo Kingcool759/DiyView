@@ -1,4 +1,4 @@
-package com.example.diyview.viewgroup;
+package com.example.diyview.viewgroup.ring;
 
 import android.content.Context;
 import android.graphics.Canvas;
