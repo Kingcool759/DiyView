@@ -5,4 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".show.Show2">
+
+    <com.example.diyview.viewgroup.ColorRingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ring_color="@color/orange"
+        app:ring_width="50" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

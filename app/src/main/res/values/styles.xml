@@ -13,8 +13,13 @@
         <attr name="circle_textSize" format="dimension" />
         <attr name="circle_textColor" format="color" />
         <attr name="circle_color" format="color"/>
-        <attr name="circle_padding" format="integer" />
-        <attr name="circle_magin" format="integer" />
         <attr name="circle_backgroud" format="color" />
     </declare-styleable>
+
+    <!--自定义系列2：带颜色的圆环-->
+    <declare-styleable name="ColorRing">
+        <attr name="ring_color" format="color"/>
+        <attr name="ring_width" format="integer" />
+    </declare-styleable>
+
 </resources>

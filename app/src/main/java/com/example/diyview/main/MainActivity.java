@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private String[] items = new String[]{
             "00自定义View系列：实心圆+文字",  //0
             "01自定义View系列：饼状图+数据",  //0
-            "02自定义View：圆",  //0
-            "03自定义View：圆",  //0
+            "02自定义View系列：圆环",  //0
+            "03自定义View系列：奥运五环",  //0
             "04自定义View：圆",  //0
             "05自定义View：圆",  //0
             "06自定义View：圆",  //0

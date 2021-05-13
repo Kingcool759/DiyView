@@ -19,7 +19,7 @@ import com.example.diyview.R;
  * @auther KC
  * @describe 自定义实心圆
  */
-public class SolidCircle extends View {
+public class SolidCircleView extends View {
     /**
      * 文本
      */
@@ -62,11 +62,11 @@ public class SolidCircle extends View {
     //文字宽高
     private Rect mBounds;
 
-    public SolidCircle(Context context) {
+    public SolidCircleView(Context context) {
         super(context);
     }
 
-    public SolidCircle(Context context, @Nullable AttributeSet attrs) {
+    public SolidCircleView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         /**
          *  获取我们所定义的自定义样式属性

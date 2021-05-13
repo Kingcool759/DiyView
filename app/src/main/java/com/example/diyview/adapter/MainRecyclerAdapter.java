@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.example.diyview.R;
+import com.hjq.toast.ToastUtils;
 
 /**
  * @data on 2020/11/11 4:43 PM
@@ -37,8 +38,8 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
             @Override
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
-                String path = String.format("/show/diyView%s", position + "");
-//                ToastUtils.show("item" + path);
+                String path = String.format("/show/diyView"+position);
+                ToastUtils.show("item" + path);
                 ARouter.getInstance().build(path).navigation();
             }
         });
