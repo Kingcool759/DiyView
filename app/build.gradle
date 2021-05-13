@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 30
@@ -18,7 +19,13 @@ android {
                 arguments = [moduleName :project.getName() ]
             }
         }
+    }
 
+    android {
+        compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
+        }
     }
 
     buildTypes {
@@ -47,4 +54,9 @@ dependencies {
 
     //吐司工具 ToastUtils.show("")
     implementation 'com.hjq:toast:8.6'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
