@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
-    tools:context=".show.Show1">
+    tools:context=".show.Show1"
+    tools:ignore="MissingConstraints">
 
-    <com.example.diyview.view.cakeview.CakeView
-        android:id="@+id/cake_view"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:background="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
+    <!--自定义系列1：自定义实心圆+自定义属性-->
+    <com.example.diyview.view.circle.SolidCircleView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:padding="10dp"
+        app:circle_backgroud="@color/gray"
+        app:circle_color="@color/blue"
+        app:circle_text="我是实心圆"
+        app:circle_textColor="@color/white"
+        app:circle_textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

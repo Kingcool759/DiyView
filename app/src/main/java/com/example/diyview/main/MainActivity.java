@@ -1,44 +1,21 @@
 package com.example.diyview.main;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import com.example.diyview.base.BaseMvvmActivity;
+import com.example.diyview.databinding.ActivityMainBinding;
 
-import android.os.Bundle;
+public class MainActivity extends BaseMvvmActivity<ActivityMainBinding,MainViewModel>{
 
-import com.example.diyview.adapter.MainRecyclerAdapter;
-import com.example.diyview.R;
-
-public class MainActivity extends AppCompatActivity {
-    private LinearLayoutManager layoutManager;
-    private MainRecyclerAdapter adapter;
-    private RecyclerView recycler;
-    private String[] items = new String[]{
-            "00自定义View系列：实心圆+文字",  //0
-            "01自定义View系列：饼状图+数据",  //0
-            "02自定义View系列：圆环",  //0
-            "03自定义View系列：奥运五环",  //0
-            "04自定义View系列：流式布局",  //0
-            "05自定义View：圆",  //0
-            "06自定义View：圆",  //0
-            "07自定义View：圆",  //0
-    };
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        ActivityMainBinding dataBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+//        MainViewModel viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+//        dataBinding.setViewModel(viewModel);
+//        dataBinding.setLifecycleOwner(this);
+//    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        recycler = findViewById(R.id.mainRecycler);
-        setRecycle();
-    }
-
-    private void setRecycle(){
-        layoutManager = new LinearLayoutManager(this);
-        adapter = new MainRecyclerAdapter(items);
-        layoutManager.setOrientation(RecyclerView.VERTICAL);
-        recycler.setLayoutManager(layoutManager);
-        recycler.setAdapter(adapter);
-        recycler.setItemAnimator(new DefaultItemAnimator());
+    public boolean isFitsSystemWindows() {
+        return true;  //防止顶部布局和状态栏重叠
     }
 }
