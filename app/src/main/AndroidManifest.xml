@@ -10,13 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".show.Show6"></activity>
+        <activity android:name=".show.Show6" />
         <activity android:name=".show.Show5" />
         <activity android:name=".show.Show4" />
         <activity android:name=".show.Show3" />
         <activity android:name=".show.Show2" />
         <activity android:name=".show.Show1" />
-        <activity android:name=".main.MainActivity">
+        <activity android:name=".main.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
